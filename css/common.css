@@ -62,19 +62,10 @@ button, input, select, textarea {
     font-family: microsoft yahei, simsun, Tahoma, Arial, serif;
     color: #6a3906;
 }
-
-body {
-    text-align: center;
-}
-
 a {
-    color: #6a3906;
     text-decoration: none;
 }
 
-a:hover {
-    color: #6a3906;
-}
 
 textarea {
     resize: none;
@@ -138,11 +129,6 @@ textarea {
     text-align: left;
 }
 
-@media screen and (max-width: 750px) {
-    html {
-        font-size: 20px;
-    }
-}
 
 @media screen and (max-width: 1920px) {
     html {
@@ -159,7 +145,6 @@ textarea {
 @media screen and (max-width: 1280px) {
     html {
         font-size: 34.13px;
-        -webkit-text-size-adjust: none;
     }
 }
 
@@ -172,7 +157,6 @@ textarea {
 @media screen and (max-width: 950px) {
     html {
         font-size: 25.33px;
-        -webkit-text-size-adjust: none;
     }
 }
 
@@ -185,7 +169,12 @@ textarea {
 @media screen and (max-width: 768px) {
     html {
         font-size: 20.48px;
-        -webkit-text-size-adjust: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 20px;
     }
 }
 
@@ -204,14 +193,12 @@ textarea {
 @media screen and (max-width: 600px) {
     html {
         font-size: 16px;
-        -webkit-text-size-adjust: none;
     }
 }
 
 @media screen and (max-width: 568px) {
     html {
         font-size: 15.15px;
-        -webkit-text-size-adjust: none;
     }
 }
 
