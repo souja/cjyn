@@ -1,13 +1,23 @@
 body{
-	background:url('../imgs/bg2.png') center 0 no-repeat;
+	background:url('../imgs/bg2.png') center 0 no-repeat fixed;
 	color:#273545;
 	background-size:cover;
 }
+/* .invite{
+	background:url('../imgs/bg2.png') center 0 no-repeat;
+	color:#273545;
+	width:37.5rem;
+	height:46.55rem;
+	margin:0;
+	padding-top:13.75rem;
+	position:relative;
+} */
 .invite .user_info_wrapper{
 	width:31.5rem;
 	margin:0 auto;
 	margin-top:13.75rem;
 	background:#FFFFFF;
+	position:relative;
 }
 .invite .inviter_info_wrapper{
 	font-size:1.6rem;
@@ -47,7 +57,7 @@ body{
 .invite .user_info .info_tips{
 	text-align:center;
 	font-size:1.5rem;
-	margin-bottom:5rem;
+	margin-bottom:3rem;
 }
 .invite .user_info .row{
 	border-bottom:1px solid #A0A0A0;
@@ -99,4 +109,103 @@ body{
 	border:0;
 	display:block;
 	margin-top: 5.25rem;
+}
+.invite-3 button{
+	margin-top:1.25rem;
+}
+.invite-3 .mask{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(0, 0, 0, 0.7);
+}
+.invite-3 .pop{
+	background:url('../imgs/bg_pop.png');
+	width:33rem;
+	height:35rem;
+	background-size:cover;
+	position:absolute;
+	top:50%;
+	margin-top:-17.5rem;
+	left:50%;
+	margin-left:-16.5rem;
+}
+.invite-3 .pop .pop_t{
+	height:5rem;
+	line-height:5rem;
+	text-align:center;
+	font-size:1.6rem;
+	color:#ffffff;
+}
+.invite-3 .pop .pop_c{
+	font-size:1.5rem;
+}
+.invite-3 .pop_info .pop_c{
+	padding:2rem 3rem;
+}
+.invite-3 .pop_info .pop_c p{
+	line-height:2.3rem;
+	text-indent:3rem;
+	margin-bottom:1rem;
+}
+.invite-3 .pop_info .dl_app{
+	width:19.35rem;
+	height:4.5rem;
+	line-height:4.5rem;
+	font-size:1.6rem;
+	text-align:center;
+	color:#ffffff;
+	display:block;
+	background:#23b8ce;
+	border-radius:5px;
+	margin:0 auto;
+}
+.invite-3 .pop_user_info .pop_c{
+	padding:1.3rem 1.6rem;
+}
+.invite-3 .pop_user_info .item{
+	background:url('../imgs/bg_item1.png');
+	background-size:cover;
+	width:25.25rem;
+	height:3.75rem;
+	line-height:3.75rem;
+	padding-left:4rem;
+	margin-bottom:0.7rem;
+}
+.invite-3 .pop_user_info .item1{
+	background:url('../imgs/bg_item1.png');
+	margin-top: 1rem;
+}
+.invite-3 .pop_user_info .item2{
+	background:url('../imgs/bg_item2.png');
+}
+.invite-3 .pop_user_info .item3{
+	background:url('../imgs/bg_item3.png');
+}
+.invite-3 .pop_user_info .item4{
+	background:url('../imgs/bg_item4.png');
+}
+.invite-3 .pop_user_info .button_wrapper{
+	margin-top:0.5rem;
+}
+.invite-3 .pop_user_info .btn_back{
+	background: url('../imgs/bg_back.png');
+	background-size:cover;
+	width:13.45rem;
+	width:269px;
+	height:4.2rem;
+	line-height:4.2rem;
+	text-align:center;
+	color:#666666;
+}
+.invite-3 .pop_user_info .btn_reg{
+	background-image: url(../imgs/bg_reg.png);
+	background-size:cover;
+	width:14.6rem;
+	height:4.5rem;
+	line-height:4.5rem;
+	color:#fff;
+	text-align:center;
 }
