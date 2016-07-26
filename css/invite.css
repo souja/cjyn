@@ -176,16 +176,20 @@ body{
 }
 .invite-3 .pop_user_info .item1{
 	background:url('../imgs/bg_item1.png');
+	background-size: cover;
 	margin-top: 1rem;
 }
 .invite-3 .pop_user_info .item2{
 	background:url('../imgs/bg_item2.png');
+	background-size: cover;
 }
 .invite-3 .pop_user_info .item3{
 	background:url('../imgs/bg_item3.png');
+	background-size: cover;
 }
 .invite-3 .pop_user_info .item4{
 	background:url('../imgs/bg_item4.png');
+	background-size: cover;
 }
 .invite-3 .pop_user_info .button_wrapper{
 	margin-top:0.5rem;
@@ -194,7 +198,6 @@ body{
 	background: url('../imgs/bg_back.png');
 	background-size:cover;
 	width:13.45rem;
-	width:269px;
 	height:4.2rem;
 	line-height:4.2rem;
 	text-align:center;
