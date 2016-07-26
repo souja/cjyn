@@ -1,10 +1,10 @@
 body{
-	background:url('../imgs/bg2.png') center 0 no-repeat fixed;
+	background:url('../images/bg2.png') center 0 no-repeat fixed;
 	color:#273545;
 	background-size:cover;
 }
 /* .invite{
-	background:url('../imgs/bg2.png') center 0 no-repeat;
+	background:url('../images/bg2.png') center 0 no-repeat;
 	color:#273545;
 	width:37.5rem;
 	height:46.55rem;
@@ -122,7 +122,7 @@ body{
 	background:rgba(0, 0, 0, 0.7);
 }
 .invite-3 .pop{
-	background:url('../imgs/bg_pop.png');
+	background:url('../images/bg_pop.png');
 	width:33rem;
 	height:35rem;
 	background-size:cover;
@@ -166,7 +166,7 @@ body{
 	padding:1.3rem 1.6rem;
 }
 .invite-3 .pop_user_info .item{
-	background:url('../imgs/bg_item1.png');
+	background:url('../images/bg_item1.png');
 	background-size:cover;
 	width:25.25rem;
 	height:3.75rem;
@@ -175,27 +175,27 @@ body{
 	margin-bottom:0.7rem;
 }
 .invite-3 .pop_user_info .item1{
-	background:url('../imgs/bg_item1.png');
+	background:url('../images/bg_item1.png');
 	background-size: cover;
 	margin-top: 1rem;
 }
 .invite-3 .pop_user_info .item2{
-	background:url('../imgs/bg_item2.png');
+	background:url('../images/bg_item2.png');
 	background-size: cover;
 }
 .invite-3 .pop_user_info .item3{
-	background:url('../imgs/bg_item3.png');
+	background:url('../images/bg_item3.png');
 	background-size: cover;
 }
 .invite-3 .pop_user_info .item4{
-	background:url('../imgs/bg_item4.png');
+	background:url('../images/bg_item4.png');
 	background-size: cover;
 }
 .invite-3 .pop_user_info .button_wrapper{
 	margin-top:0.5rem;
 }
 .invite-3 .pop_user_info .btn_back{
-	background: url('../imgs/bg_back.png');
+	background: url('../images/bg_back.png');
 	background-size:cover;
 	width:13.45rem;
 	height:4.2rem;
@@ -204,7 +204,7 @@ body{
 	color:#666666;
 }
 .invite-3 .pop_user_info .btn_reg{
-	background-image: url(../imgs/bg_reg.png);
+	background-image: url(../images/bg_reg.png);
 	background-size:cover;
 	width:14.6rem;
 	height:4.5rem;
