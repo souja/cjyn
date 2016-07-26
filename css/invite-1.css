@@ -1,67 +1,7 @@
-@media screen and (max-width: 1920px) {
-}
-
-@media screen and (max-width: 1440px) {
-}
-
-@media screen and (max-width: 1280px) {
-}
-
-@media screen and (max-width: 1080px) {
-}
-
-@media screen and (max-width: 950px) {
-}
-
-@media screen and (max-width: 800px) {
-}
-
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 750px) {
-}
-
-@media screen and (max-width: 720px) {
-}
-
-@media screen and (max-width: 640px) {
-}
-
-@media screen and (max-width: 600px) {
-}
-
-@media screen and (max-width: 568px) {
-}
-
-@media screen and (max-width: 435px) {
-}
-
-@media screen and (max-width: 414px) {
-}
-
-@media screen and (max-width: 412px) {
-}
-
-@media screen and (max-width: 411px) {
-}
-
-@media screen and (max-width: 375px) {
-}
-
-@media screen and (max-width: 360px) {
-}
-
-@media screen and (max-width: 357px) {
-}
-
-@media screen and (max-width: 320px) {
-}
-
 body {
     background: url('../images/bg1.png') center 0 no-repeat fixed;
     color: #273545;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .invite-1 {
@@ -108,4 +48,82 @@ body {
     width: 100%;
     left: 0;
     text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .invite-1 .btn_boot{
+        top:7rem;
+        margin-left: -3.942rem;
+    }
+    .invite-1 .btn_boot img{
+        width: 7.8rem;
+        height: 11.85rem;
+    }
+    .invite-1 .inviter {
+        width: 16.23rem;
+        height: 8rem;
+        margin-left: -8.16rem;
+        top:28.46rem;
+        font-size: 1.38rem;
+    }
+    .invite-1 .inviter .join_group {
+        margin-top: 5.384rem;
+    }
+    .invite-1 .inviter p {
+        bottom: -2.3rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .invite-1 .btn_boot {
+        margin-left: -6.2rem;
+    }
+
+    .invite-1 .btn_boot img {
+        width: 12.69rem;
+        height: 19.25rem;
+    }
+
+    .invite-1 .inviter {
+        width: 21.94rem;
+        height: 10.82rem;
+        top: 32rem;
+        margin-left: -10.97rem;
+        font-size: 1.55rem;
+    }
+
+    .invite-1 .inviter .join_group {
+        margin-top: 7.28rem;
+    }
+
+    .invite-1 .inviter p {
+        bottom: -3.12rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    @media screen and (max-height: 480px) {
+        .invite-1 .btn_boot{
+            top:5.09rem;
+            margin-left: -3.47rem;
+        }
+        .invite-1 .btn_boot img{
+            width: 6.77rem;
+            height: 10.27rem;
+        }
+        .invite-1 .inviter {
+            width: 14.07rem;
+            height: 6.93rem;
+            top:21.19rem;
+            margin-left: -7.15rem;
+        }
+
+        .invite-1 .inviter .join_group {
+            margin-top: 4.75rem;
+        }
+        .invite-1 .inviter p {
+            bottom: -2.03rem;
+        }
+    }
 }
