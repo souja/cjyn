@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>${user.realname }邀请您加入长江有你</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/invite-1.css">
+    <style type="text/css">
+        .bga {
+            background: url('images/bg1.png') center 0 no-repeat fixed;
+            color: #273545;
+            background-size: 100% 100%
+        }
+
+        .bgb {
+            background: url('images/bg2.png') center 0 no-repeat fixed;
+            color: #273545;
+            background-size: 100% 100%
+        }
+    </style>
+</head>
+<body class="bga">
+<div id="pageOne" class="invite-1">
+    <div class="btn_boot"><img src="images/img_boot.png" alt="" onclick="goPageTwo()"/></div>
+    <div class="inviter">
+        <div class="join_group" style="z-index: 100;">
+            <span>长江如海队</span>
+        </div>
+        <p>来自 <span>${user.cj_period}${user.realname}</span> 的邀请</p>
+    </div>
+</div>
+
+
+<div id="pageTwo" class="invite invite-2 hide">
+    <div class="user_info_wrapper">
+        <div class="inviter_info_wrapper">
+            <div class="avatar"><img src="images/img_avatar.png" alt=""></div>
+            <div class="inviter_info clear">
+                <span class="float-left">${user.cj_period}期校友</span>
+                <span class="float-right">${user.realname}</span>
+            </div>
+            <div class="inviter_tips">
+                邀请您加入长江有你俱乐部
+            </div>
+        </div>
+        <div class="group_tips">专属长江校友的互动圈子</div>
+        <div class="user_info">
+            <div class="info_tips"><b>填写你在长江的学籍信息</b></div>
+            <div class="row clear">
+                <label class="float-left">姓名：</label>
+                <input id="realName" class="float-left" type="text" placeholder="填写你的真实姓名">
+            </div>
+            <div class="row clear">
+                <label class="float-left">期数：</label>
+                <input id="period" class="float-left" type="text" placeholder="如CK19">
+            </div>
+        </div>
+        <div class="clear">
+            <button onclick="goPageThree()">下一步</button>
+        </div>
+    </div>
+</div>
+
+<div id="pageThree" class="invite invite-3 hide">
+    <div id="pageThree1" class="user_info_wrapper">
+        <div class="inviter_info_wrapper">
+            <div class="avatar"><img src="images/img_avatar.png" alt=""></div>
+            <div class="inviter_info clear">
+                <span class="float-left">${user.cj_period}期校友</span>
+                <span class="float-right">${user.realname}</span>
+            </div>
+            <div class="inviter_tips">
+                邀请您加入长江有你俱乐部
+            </div>
+        </div>
+        <div class="group_tips">专属长江校友的互动圈子</div>
+
+        <!--注册，输入手机号，密码，获取验证码-->
+        <form id="mForm">
+            <div class="user_info">
+                <div class="info_tips"><b>注册账号</b></div>
+                <div class="row clear">
+                    <label class="float-left">手机号：</label>
+                    <input id="phoneNo" minlength="11" maxlength="11" class="float-left" type="text"
+                           placeholder="填写你的手机号码">
+                </div>
+                <div class="row clear">
+                    <label class="float-left">登录密码：</label>
+                    <input id="password" class="float-left" minlength="6" maxlength="18" type="password"
+                           placeholder="输入6-18位登录密码">
+                </div>
+                <div class="row clear">
+                    <label class="float-left">验证码：</label>
+                    <input id="verifyCode" maxlength="6" class="float-left input2" type="text">
+                    <a id="aGetVerifyCode" href="javascript:getVerifyCode();"
+                       class="get_verification float-left">获取验证码</a>
+                </div>
+            </div>
+            <div class="clear">
+                <button type="submit">提交</button>
+            </div>
+        </form>
+    </div>
+
+    <!--确认注册-->
+    <div id="regLayout" class="mask hide">
+        <div class="pop pop_user_info">
+            <div class="pop_t">信息确认</div>
+            <div class="pop_c">
+                <p>您的注册信息如下</p>
+                <div id="confirm"></div>
+                <div class="button_wrapper clear">
+                    <a href="javascript:goBack();" class="btn btn_back float-left">返回</a>
+                    <a href="javascript:doRegister();" class="btn btn_reg float-right">确认注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="downloadLayout" class="mask hide">
+        <div class="pop pop_info">
+            <div class="pop_t">信息确认</div>
+            <div class="pop_c">
+                <p>内测期间，通过校友邀请进入平台的账号可以使用所有功能。</p>
+                <p>为了保证长江有你平台的专属性和私密性，长江有你平台只针对长江同学开放。</p>
+                <p>您填写的注册信息已同步提交至邀请人，待邀请人帮忙确认您的真实身份，以便后期为您提供更多的服务。</p>
+                <a id="aDownload" class="dl_app">下载长江有你app</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/happy.js"></script>
+<script src="js/jquery.form.js"></script>
+<script type="text/javascript" language="javascript">
+
+    //============>>>>PageOne Start
+    function goPageTwo() {
+        $(document.body).removeClass('bga').addClass('bgb');
+        $("#pageOne").css('display', 'none');
+        $("#pageTwo").css('display', 'inline-block');
+    }
+    //PageOne End<<<<============
+
+
+    //============>>>>PageTwo Start
+    function checkPageTwo() {
+        if ($("#realName").val() == "") {
+            alert("请输入您的姓名！");
+            return false;
+        }
+        if ($("#period").val() == "") {
+            alert("请输入您的期数！");
+            return false;
+        }
+        return true;
+    }
+    function goPageThree() {
+        if (checkPageTwo()) {
+            $("#pageTwo").css('display', 'none');
+            $("#pageThree").css('display', 'inline-block');
+        }
+    }
+    //PageTwo End<<<<============
+
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+    //============>>>>PageThree Start
+    var tik;
+    var sec = 60;
+    var grpId, invId;
+    var inviter = "${user.realname }";
+    $(document).ready(function () {
+        grpId = getUrlParam('groupid');
+        invId = getUrlParam('invitationid');
+        console.log("groupId=" + grpId + "\ninvitationId=" + invId);
+
+        $("#aGetVerifyCode").bind('click', getVerifyCode);
+        $("#aDownload").attr('href', 'javascript:download();');
+        var options = {
+            // url: '/wap/invitationregister?groupid=' + grpId + '&invitationid=' + invId,
+            url: '/wap/invite/invitationregister',
+            type: 'post',
+            dataType: 'json',
+            clearForm: 'false',
+            resetForm: 'false',
+            success: function (data, statusText) {
+                alert(data.msg);
+                if (data.code == 200) {
+                    //显示确认注册信息
+                    var html = "<p class='item item1'>姓名：" + $("#realName").val() + "</p>";
+                    html += "<p class='item item2'>期数 ：" + $("#period").val() + "</p>";
+                    html += "<p class='item item3'>您将加入：TODO</p>";
+                    html += "<p class='item item4'>登录平台手机号：" + $("#phoneNo").val() + "</p>";
+                    html += "<p class='text-right'>邀请人：" + inviter + "</p>";
+                    $("#confirm").append(html);
+                    $("#pageThree1").css('display', 'none');
+                    $("#regLayout").css('display', 'inline-block');
+                }
+            },
+            error: function (data) {
+                alert('验证失败');
+                //test 显示确认注册信息
+                var html = "<p class='item item1'>姓名：" + $("#realName").val() + "</p>";
+                html += "<p class='item item2'>期数 ：" + $("#period").val() + "</p>";
+                html += "<p class='item item3'>您将加入：TODO</p>";
+                html += "<p class='item item4'>登录平台手机号：" + $("#phoneNo").val() + "</p>";
+                html += "<p class='text-right'>邀请人：" + inviter + "</p>";
+                $("#confirm").append(html);
+                $("#pageThree1").css('display', 'none');
+                $("#regLayout").css('display', 'inline-block');
+            }
+        };
+
+
+        $("#mForm").submit(function () {
+            if ($("#phoneNo").val() == "") {
+                alert("请输入您的手机号码！");
+            } else if ($("#phoneNo").val().length < 11) {
+                alert("请输入正确的手机号码！");
+            } else if ($("#password").val() == "" || $("#password").val().length < 6) {
+                alert("请输入6到18位的密码！");
+            } else if ($("#verifyCode").val() == "") {
+                alert("请输入验证码！");
+            } else if ($("#verifyCode").val().length < 6) {
+                alert("请输入6位数的验证码！");
+            } else {
+                $(this).ajaxSubmit(options);
+            }
+            return false;
+        });
+    });
+
+
+    var sending = false;
+    function getVerifyCode() {
+        if (!sending) {
+            sending = true;
+            $("#aDownload").text("发送中...");
+            $("#aDownload").attr('href', "javascript:console.log('un-click-able');");
+            $.ajax({
+                type: "POST",
+                url: "/app/user/sendregsms",
+                dataType: "json",
+                data: {mobile: $("#phoneNo").val()},
+                success: function (data) {
+                    sending = false;
+                    alert(data.msg);
+                    if (data.code == 200) {
+                        tik = setInterval(function ticTok() {
+                            $("#aDownload").text(sec + "秒后重新获取");
+                            sec--;
+                            if (sec == 0) {
+                                clearInterval(tik);
+                                $("#aDownload").text("发送验证码");
+                                $("#aDownload").attr('href', "javascript:getVerifyCode();");
+                                sec = 60;
+                            }
+                        }, 1000);
+                    } else {
+                        $("#aDownload").text("发送验证码");
+                        $("#aDownload").attr('href', "javascript:getVerifyCode();");
+                    }
+                }
+            });
+        }
+    }
+
+    function goBack() {
+        $("#regLayout").css('display', 'none');
+        $("#pageThree1").css('display', 'inline-block');
+        $(document.body).css('overflow', 'auto');
+    }
+
+    function doRegister() {
+        $.ajax({
+            type: "POST",
+            url: "/wap/invite/invitationregister",
+            dataType: "json",
+            data: {mobile: $("#phoneNo").val()},
+            success: function (data) {
+                console.log('reg result:' + data.code + ',' + data.msg);
+            }
+        });
+        //'1'成功后↓
+        $("#regLayout").css('display', 'none');
+        $("#downloadLayout").css('display', 'inline-block');
+    }
+
+
+</script>
+</body>
+</html>
