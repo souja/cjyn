@@ -103,6 +103,30 @@ body {
 }
 
 @media screen and (max-width: 320px) {
+    @media screen and (max-height: 568px) {
+        .invite-1 .btn_boot{
+            top:6.01rem;
+            margin-left: -4.09rem;
+        }
+        .invite-1 .btn_boot img{
+            width: 7.99rem;
+            height: 12.12rem;
+        }
+        .invite-1 .inviter {
+            width: 16.60rem;
+            height: 8.18rem;
+            top:25rem;
+            margin-left: -8.437rem;
+        }
+
+        .invite-1 .inviter .join_group {
+            margin-top: 5.6rem;
+        }
+        .invite-1 .inviter p {
+            bottom: -2.4rem;
+        }
+
+    }
     @media screen and (max-height: 480px) {
         .invite-1 .btn_boot{
             top:5.09rem;
