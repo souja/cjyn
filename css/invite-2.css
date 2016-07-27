@@ -1,8 +1,9 @@
-body{
-	background:url('../images/bg2.png') center 0 no-repeat fixed;
-	color:#273545;
-	background-size:cover;
+body {
+    background: url('../images/bg2.png') center 0 no-repeat fixed;
+    color: #273545;
+    background-size: cover;
 }
+
 /* .invite{
 	background:url('../images/bg2.png') center 0 no-repeat;
 	color:#273545;
@@ -12,203 +13,397 @@ body{
 	padding-top:13.75rem;
 	position:relative;
 } */
-.invite .user_info_wrapper{
-	width:31.5rem;
-	margin:0 auto;
-	margin-top:13.75rem;
-	background:#FFFFFF;
-	position:relative;
+.invite .user_info_wrapper {
+    width: 31.5rem;
+    margin: 0 auto;
+    margin-top: 13.75rem;
+    background: #FFFFFF;
+    position: relative;
 }
-.invite .inviter_info_wrapper{
-	font-size:1.6rem;
-	height:6.1rem;
-	background:#ECF0F1;
-	position:relative;
-	padding-left:10.9rem;
-	padding-top:2rem;
-	padding-right:1rem;
+
+.invite .inviter_info_wrapper {
+    font-size: 1.6rem;
+    height: 6.1rem;
+    background: #ECF0F1;
+    position: relative;
+    padding-left: 10.9rem;
+    padding-top: 2rem;
+    padding-right: 1rem;
 }
-.invite .avatar{
-	position:absolute;
-	top:-2.2rem;
-	left:1.2rem;
-	width:8.75rem;
-	height:8.75rem;
-	border-radius:5px;
+
+.invite .avatar {
+    position: absolute;
+    top: -2.2rem;
+    left: 1.2rem;
+    width: 8.75rem;
+    height: 8.75rem;
+    border-radius: 5px;
 }
-.invite .avatar img{
-	width:8.75rem;
-	height:8.75rem;
+
+.invite .avatar img {
+    width: 8.75rem;
+    height: 8.75rem;
 }
-.invite .inviter_tips{
-	margin-top:1rem;
+
+.invite .inviter_tips {
+    margin-top: 1rem;
 }
-.invite .group_tips{
-	height:2.4rem;
-	background:#2d3942;
-	color:#ffffff;
-	text-align:center;
-	line-height:2.4rem;
-	font-size:1.6rem;
+
+.invite .group_tips {
+    height: 2.4rem;
+    background: #2d3942;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
 }
-.invite .user_info{
-	padding:2.5rem;
+
+.invite .user_info {
+    padding: 2.5rem;
 }
-.invite .user_info .info_tips{
-	text-align:center;
-	font-size:1.5rem;
-	margin-bottom:3rem;
+
+.invite .user_info .info_tips {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
 }
-.invite .user_info .row{
-	border-bottom:1px solid #A0A0A0;
-	margin-bottom:2.5rem;
+
+.invite .user_info .row {
+    border-bottom: 1px solid #A0A0A0;
+    margin-bottom: 2.5rem;
 }
-.invite .user_info label{
-	font-size:1.5rem;
-	font-weight:bold;
-	margin-top:0.4rem;
+
+.invite .user_info label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.4rem;
 }
-.invite-3 .user_info label{
-	width:8rem;
+
+.invite-3 .user_info label {
+    width: 8rem;
 }
-.invite .user_info input{
-	width:22rem;
-	height:3rem;
-	line-height:3rem;
-	font-size:1.5rem;
-	border:0;
-	background:none;
-	font-weight:normal;
-	text-align:center;
+
+.invite .user_info input {
+    width: 22rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    font-weight: normal;
+    text-align: center;
 }
-.invite-3 .user_info input{
-	width:18rem;
+
+.invite-3 .user_info input {
+    width: 18rem;
 }
-.invite-3 .user_info .input2{
-	width:9rem;
+
+.invite-3 .user_info .input2 {
+    width: 9rem;
 }
-.invite-3 .user_info .get_verification{
-	width:9rem;
-	height:2.5rem;
-	line-height:2.5rem;
-	text-align:center;
-	border:1px solid #AAAAAA;
-	border-radius:5px;
-	display:block;
-	color:#303030;	
-	font-size:1.4rem;
+
+.invite-3 .user_info .get_verification {
+    width: 9rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    display: block;
+    color: #303030;
+    font-size: 1.4rem;
 }
-.invite button{
-	font-size:2rem;
-	width:100%;
-	height:5rem;
-	background:#23b8ce;
-	color:#fff;
-	line-height:5rem;
-	text-align:center;
-	border:0;
-	display:block;
-	margin-top: 5.25rem;
+
+.invite button {
+    font-size: 2rem;
+    width: 100%;
+    height: 5rem;
+    background: #23b8ce;
+    color: #fff;
+    line-height: 5rem;
+    text-align: center;
+    border: 0;
+    display: block;
+    margin-top: 5.25rem;
 }
-.invite-3 button{
-	margin-top:1.25rem;
+
+.invite-3 button {
+    margin-top: 1.25rem;
 }
-.invite-3 .mask{
-	position:absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-	background:rgba(0, 0, 0, 0.7);
+
+.invite-3 .mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
 }
-.invite-3 .pop{
-	background:url('../images/bg_pop.png');
-	width:33rem;
-	height:35rem;
-	background-size:cover;
-	position:absolute;
-	top:50%;
-	margin-top:-17.5rem;
-	left:50%;
-	margin-left:-16.5rem;
+
+.invite-3 .pop {
+    background: url('../images/bg_pop.png');
+    width: 33rem;
+    height: 35rem;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    margin-top: -17.5rem;
+    left: 50%;
+    margin-left: -16.5rem;
 }
-.invite-3 .pop .pop_t{
-	height:5rem;
-	line-height:5rem;
-	text-align:center;
-	font-size:1.6rem;
-	color:#ffffff;
+
+.invite-3 .pop .pop_t {
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #ffffff;
 }
-.invite-3 .pop .pop_c{
-	font-size:1.5rem;
+
+.invite-3 .pop .pop_c {
+    font-size: 1.5rem;
 }
-.invite-3 .pop_info .pop_c{
-	padding:2rem 3rem;
+
+.invite-3 .pop_info .pop_c {
+    padding: 2rem 3rem;
 }
-.invite-3 .pop_info .pop_c p{
-	line-height:2.3rem;
-	text-indent:3rem;
-	margin-bottom:1rem;
+
+.invite-3 .pop_info .pop_c p {
+    line-height: 2.3rem;
+    text-indent: 3rem;
+    margin-bottom: 1rem;
 }
-.invite-3 .pop_info .dl_app{
-	width:19.35rem;
-	height:4.5rem;
-	line-height:4.5rem;
-	font-size:1.6rem;
-	text-align:center;
-	color:#ffffff;
-	display:block;
-	background:#23b8ce;
-	border-radius:5px;
-	margin:0 auto;
+
+.invite-3 .pop_info .dl_app {
+    width: 19.35rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    background: #23b8ce;
+    border-radius: 5px;
+    margin: 0 auto;
 }
-.invite-3 .pop_user_info .pop_c{
-	padding:1.3rem 1.6rem;
+
+.invite-3 .pop_user_info .pop_c {
+    padding: 1.3rem 1.6rem;
 }
-.invite-3 .pop_user_info .item{
-	background:url('../images/bg_item1.png');
-	background-size:cover;
-	width:25.25rem;
-	height:3.75rem;
-	line-height:3.75rem;
-	padding-left:4rem;
-	margin-bottom:0.7rem;
+
+.invite-3 .pop_user_info .item {
+    background: url('../images/bg_item1.png');
+    background-size: cover;
+    width: 25.25rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    padding-left: 4rem;
+    margin-bottom: 0.7rem;
 }
-.invite-3 .pop_user_info .item1{
-	background:url('../images/bg_item1.png');
-	background-size: cover;
-	margin-top: 1rem;
+
+.invite-3 .pop_user_info .item1 {
+    background: url('../images/bg_item1.png');
+    background-size: cover;
+    margin-top: 1rem;
 }
-.invite-3 .pop_user_info .item2{
-	background:url('../images/bg_item2.png');
-	background-size: cover;
+
+.invite-3 .pop_user_info .item2 {
+    background: url('../images/bg_item2.png');
+    background-size: cover;
 }
-.invite-3 .pop_user_info .item3{
-	background:url('../images/bg_item3.png');
-	background-size: cover;
+
+.invite-3 .pop_user_info .item3 {
+    background: url('../images/bg_item3.png');
+    background-size: cover;
 }
-.invite-3 .pop_user_info .item4{
-	background:url('../images/bg_item4.png');
-	background-size: cover;
+
+.invite-3 .pop_user_info .item4 {
+    background: url('../images/bg_item4.png');
+    background-size: cover;
 }
-.invite-3 .pop_user_info .button_wrapper{
-	margin-top:0.5rem;
+
+.invite-3 .pop_user_info .button_wrapper {
+    margin-top: 0.5rem;
 }
-.invite-3 .pop_user_info .btn_back{
-	background: url('../images/bg_back.png');
-	background-size:cover;
-	width:13.45rem;
-	height:4.2rem;
-	line-height:4.2rem;
-	text-align:center;
-	color:#666666;
+
+.invite-3 .pop_user_info .btn_back {
+    background: url('../images/bg_back.png');
+    background-size: cover;
+    width: 13.45rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    text-align: center;
+    color: #666666;
 }
-.invite-3 .pop_user_info .btn_reg{
-	background-image: url(../images/bg_reg.png);
-	background-size:cover;
-	width:14.6rem;
-	height:4.5rem;
-	line-height:4.5rem;
-	color:#fff;
-	text-align:center;
+
+.invite-3 .pop_user_info .btn_reg {
+    background-image: url(../images/bg_reg.png);
+    background-size: cover;
+    width: 14.6rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+    @media screen and (max-height: 480px) {
+
+        .invite .user_info_wrapper {
+            width: 24.42rem;
+            margin-top: 10.66rem;
+        }
+
+        .invite .inviter_info_wrapper {
+            font-size: 1.24rem;
+            height: 4.73rem;
+            padding-left: 8.45rem;
+            padding-top: 1.55rem;
+            padding-right: 0.78rem;
+        }
+
+        .invite .avatar {
+            top: -1.71rem;
+            left: 1rem;
+            width: 6.78rem;
+            height: 6.78rem;
+            border-radius: 3.88px;
+        }
+
+        .invite .avatar img {
+            width: 6.78rem;
+            height: 6.78rem;
+        }
+
+        .invite .inviter_tips {
+            margin-top: 0.78rem;
+        }
+
+        .invite .group_tips {
+            height: 1.86rem;
+            line-height: 1.86rem;
+            font-size: 1.24rem;
+        }
+
+        .invite .user_info {
+            padding: 1.94rem;
+        }
+
+        .invite .user_info .info_tips {
+            font-size: 1.16rem;
+            margin-bottom: 2.33rem;
+        }
+
+        .invite .user_info .row {
+            margin-bottom: 1.94rem;
+        }
+
+        .invite .user_info label {
+            font-size: 1.16rem;
+            margin-top: 0.31rem;
+        }
+
+        .invite-3 .user_info label {
+            width: 6.2rem;
+        }
+
+        .invite .user_info input {
+            width: 17.05rem;
+            height: 2.33rem;
+            line-height: 2.33rem;
+            font-size: 1.16rem;
+        }
+
+        .invite-3 .user_info input {
+            width: 13.95rem;
+        }
+
+        .invite-3 .user_info .input2 {
+            width: 6.55rem;
+        }
+
+        .invite-3 .user_info .get_verification {
+            width: 7.3rem;
+            height: 1.94rem;
+            line-height: 1.94rem;
+            font-size: 1.09rem;
+        }
+
+        .invite button {
+            font-size: 1.55rem;
+            height: 3.88rem;
+            line-height: 3.88rem;
+            margin-top: 4.07rem;
+        }
+
+        .invite-3 button {
+            margin-top: 0.97rem;
+        }
+
+        .invite-3 .pop {
+            width: 25.58rem;
+            height: 27.13rem;
+            margin-top: -13.56rem;
+            margin-left: -12.79rem;
+        }
+
+        .invite-3 .pop .pop_t {
+            height: 3.88rem;
+            line-height: 3.88rem;
+            font-size: 1.24rem;
+        }
+
+        .invite-3 .pop .pop_c {
+            font-size: 1.16rem;
+        }
+
+        .invite-3 .pop_info .pop_c {
+            padding: 1.55rem 2.33rem;
+        }
+
+        .invite-3 .pop_info .pop_c p {
+            line-height: 1.78rem;
+            text-indent: 2.33rem;
+            margin-bottom: 0.78rem;
+        }
+
+        .invite-3 .pop_info .dl_app {
+            width: 10.35rem;
+            height: 3.49rem;
+            line-height: 3.49rem;
+            font-size: 1.24rem;
+        }
+
+        .invite-3 .pop_user_info .pop_c {
+            padding: 1.01rem 1.24rem;
+        }
+
+        .invite-3 .pop_user_info .item {
+            width: 19.57rem;
+            height: 2.91rem;
+            line-height: 2.91rem;
+            padding-left: 3.1rem;
+            margin-bottom: 0.54rem;
+        }
+
+        .invite-3 .pop_user_info .item1 {
+            margin-top: 0.78rem;
+        }
+
+        .invite-3 .pop_user_info .button_wrapper {
+            margin-top: 0.39rem;
+        }
+
+        .invite-3 .pop_user_info .btn_back {
+            width: 10.43rem;
+            height: 3.26rem;
+            line-height: 3.26rem;
+        }
+
+        .invite-3 .pop_user_info .btn_reg {
+            width: 11.32rem;
+            height: 3.49rem;
+            line-height: 3.49rem;
+        }
+    }
 }
